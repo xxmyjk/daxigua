@@ -1210,6 +1210,11 @@ window.__require = function e(t, n, o) {
             if (fruitSlowDown) {
               n.getComponent(cc.RigidBody).linearDamping = fruitSlowDown;
             }
+            //speed !!!!
+            if (gravityScale) {
+              n.getComponent(cc.RigidBody).gravityScale = gravityScale
+            }
+            //!!!
             n.getComponent(cc.RigidBody).active = false;
             n.getComponent(cc.PhysicsCircleCollider).radius = 0;
             // 让说过更 Q 弹
