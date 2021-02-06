@@ -43,3 +43,5 @@ document.getElementsByTagName("title")[0].innerText = '合成大西瓜';
 // 开启选分弹窗：将 false 改为 true
 let selectModal = false;
 
+// 重力系数, 越大, 下落速度越快
+let gravityScale = 30
